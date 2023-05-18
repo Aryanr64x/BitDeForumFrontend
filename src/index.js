@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import AuthContextWrapper from './contexts/AuthContextWrapper';
+import PosstContextWrapper from './contexts/PostsContextWrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthContextWrapper>
+      <PosstContextWrapper>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </PosstContextWrapper>
+    </AuthContextWrapper>
   </React.StrictMode>
 );
 
