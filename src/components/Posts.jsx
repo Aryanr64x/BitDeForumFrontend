@@ -36,7 +36,7 @@ const Posts = () => {
                                 {
                                     postsContainer.posts.map((post)=>{
                                         return <div onClick={()=>{navigate('/post/'+post._id)}} key={post._id}>
-                                             <SinglePost post = {post} />
+                                             <SinglePost post = {post} fromHomePage={true}/>
                                         </div>
                                     })
                                 }

@@ -11,7 +11,7 @@ const CreatePost = ( {  }) => {
 
     return (
         <div className="px-12">
-            <button className="px-2 py-2 bg-teal-700 text-white mt-8" onClick={()=>{setShowDialog(true)}}>
+            <button className="px-2 py-2  text-white" onClick={()=>{setShowDialog(true)}}>
                 Create New Post
             </button>
 
