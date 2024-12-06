@@ -63,7 +63,7 @@ const SignUp = ({ signInRequest }) => {
                         </div>
                         <input ref={password}
 
-                            type="password" className="w-full mt-2 text-black rounded-md px-2 py-2 border-black border-2" placeholder="Create a strong password" />
+                            type="password" className="w-full mt-2 text-black rounded-md px-2 py-2 border-black border-2" placeholder="Create a strong password (Minimum 6 characters)" />
                     </div>
 
                     <div className="mt-4">
